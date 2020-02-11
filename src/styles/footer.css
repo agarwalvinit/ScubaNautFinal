@@ -1,0 +1,148 @@
+.main-footer-div {
+  background-color: #5cd7e1;
+  padding: 0px;
+}
+
+.content-footer-div {
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 5% 0% 0% 0%;
+}
+
+.content-sub-div {
+  flex: 1;
+}
+h6 {
+  margin-bottom: 0px !important;
+}
+
+.quick-links {
+  color: #777;
+  text-decoration: none !important;
+}
+.footer-links {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Nunito", sans-serif;
+}
+.footer-heading {
+  color: #777;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-content {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-align: left;
+  margin: 0px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 30px;
+  color: #777;
+}
+.sub-footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+  margin: auto;
+}
+.sub-footer-content {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px !important;
+  font-size: 16px;
+}
+.social-footer-div {
+}
+.non-square {
+  height: 45px;
+  width: 55px;
+  object-fit: contain;
+}
+.square {
+  height: 45px;
+  object-fit: contain;
+  width: 55px;
+}
+.social-image {
+  margin-right: 15px;
+}
+
+/* responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /*  */
+  .main-footer-div {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0%;
+  }
+  .content-footer-div {
+    flex-direction: column;
+    padding: 0% 15%;
+  }
+  .content-sub-div {
+    padding: 8% 0%;
+  }
+  .sub-footer-content {
+    min-height: 60px;
+    display: block;
+    margin: 0px !important;
+    font-size: 16px;
+    padding: 0% 10%;
+  }
+  .blueray-andaman {
+    height: 100px;
+    width: auto;
+    margin: 0;
+  }
+  .social-image {
+    margin-right: 5px;
+  }
+
+  .square {
+    height: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 55px;
+  }
+  .non-square {
+    height: 35px;
+    width: 55px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*  */
+}

@@ -1,0 +1,124 @@
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  color: #212529;
+  font-family: "Nunito", sans-serif;
+}
+
+.note {
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
+.contact-form {
+  flex: 1;
+}
+
+.location-image {
+  max-width: 100vw;
+}
+.sections-holder {
+  display: flex;
+  justify-content: space-between;
+  margin: 9% 0;
+}
+.contact-form {
+  flex: 1;
+}
+.address-holder {
+  flex: 1;
+}
+.input-field {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  width: 90%;
+  height: 50px;
+  padding: 14px 12px;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 4.5%;
+  border-radius: 5px;
+}
+.textArea {
+  height: 150px;
+}
+.no-margin {
+  margin: 0 auto !important;
+}
+.left {
+  text-align: left !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+.submit-button {
+  background: #0376b5;
+  color: #fff;
+  border: 2px solid #0376b5;
+  -webkit-appearance: button;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: "Open Sans", Arial, serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 10px;
+  /* line-height: 1.42857; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
+/* responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sections-holder {
+    margin: 9% 0;
+    flex-direction: column;
+    padding: 0% 8%;
+  }
+  .address-holder {
+    margin: 9% 0;
+    flex: 1 1;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*  */
+}

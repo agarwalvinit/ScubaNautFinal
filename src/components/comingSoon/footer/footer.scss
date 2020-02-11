@@ -1,0 +1,42 @@
+@import "../../../styles/comingSoon/colors";
+.address {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    left: -20px;
+    bottom: 0;
+    padding: 0;
+  }
+  &.address__line:before {
+    background-image: url(../../../img/location.svg);
+    background-size: 15px 20px;
+  }
+  &.phone__line:before {
+    background-image: url(../../../img/whatsapp.svg);
+    background-size: 15px 16px;
+  }
+  &.mail__line:before {
+    background-image: url(../../../img/mail.svg);
+    background-size: 15px;
+    bottom: -3px;
+  }
+}
+.footer-strip__container {
+  height: 50px;
+  color: $white;
+  background-color: rgba($black, 0.68);
+}
+
+.social-media__box {
+  height: 30px;
+  width: 30px;
+  > img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+.contact {
+  margin-top: 6rem !important;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.underline-div {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+
+.separator {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  display: block;
+  height: 2px;
+  background-color: #818181;
+  width: 201px;
+}
+
+.lead {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  color: #212529;
+  font-family: "Nunito", sans-serif;
+}
+.content {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0;
+  font-weight: 500;
+  text-align: left;
+  margin: 0 0 20px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 28px;
+  color: #777;
+}
+
+.left {
+  text-align: left !important;
+}
+
+/* drop down menu styles */
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #eee;
+}
+
+/* responsivenss */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /*  */
+  .privacy-content-holder {
+    padding: 0% 9%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*  */
+}

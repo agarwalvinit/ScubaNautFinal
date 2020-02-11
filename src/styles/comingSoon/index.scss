@@ -1,0 +1,190 @@
+@import "colors";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+}
+
+img {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(1, 19, 33);
+}
+
+// Over ride css
+.scubanaut__container {
+  max-width: 1200px;
+  margin: auto !important;
+  .flex {
+    display: flex;
+  }
+
+  .flex-column-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .txt-center {
+    text-align: center;
+  }
+
+  .txt-justify {
+    text-align: justify;
+  }
+
+  // Padding
+  .p-a-0-1 {
+    padding: 4px;
+  }
+
+  .p-a-1 {
+    padding: 8px;
+  }
+
+  .p-a-1-1 {
+    padding: 12px;
+  }
+
+  .p-a-2 {
+    padding: 16px;
+  }
+
+  .p-a-3 {
+    padding: 24px;
+  }
+
+  .p-y-1-1 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .p-y-3 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .p-y-8 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .p-x-2 {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .p-x-3 {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .p-l-5 {
+    padding-left: 40px;
+  }
+
+  .p-b-2 {
+    padding-bottom: 16px;
+  }
+
+  .p-b-0 {
+    padding-bottom: 0;
+  }
+
+  // margin
+  .m-t-1 {
+    margin-top: 8px;
+  }
+
+  .m-t-2 {
+    margin-top: 16px;
+  }
+
+  .m-t-3 {
+    margin-top: 24px;
+  }
+
+  .m-r-1 {
+    margin-right: 8px;
+  }
+
+  .m-y-2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .m-y-5 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .rotate {
+    animation: rotate 0.5s linear;
+  }
+
+  .txt-primary {
+    color: $primary;
+  }
+
+  .txt-blue-1 {
+    color: $blue-1;
+  }
+
+  .txt-white {
+    color: $white;
+  }
+
+  .bg-white {
+    background-color: $white;
+  }
+
+  // font
+  .f-20 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .f-18 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .f-16 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .f-14 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .f-12 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

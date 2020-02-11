@@ -1,0 +1,40 @@
+.gallery-holder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 8;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  object-fit: cover;
+}
+.img-holder {
+  display: block;
+  width: 32%;
+  margin-left: 1%;
+  position: relative;
+  /* top: 0; */
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+  /* margin-bottom: 30px; */
+  border-radius: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* 
+   */
+
+  border: 2px solid #f2f2f2;
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+  position: relative;
+  /*  */
+}

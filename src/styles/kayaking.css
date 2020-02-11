@@ -1,0 +1,124 @@
+.kayaking-image {
+  max-width: 100vw;
+  height: 542px;
+}
+
+.kayaking-hero-section {
+  background-image: url(https://diveindia.com/wp-content/uploads/2014/09/REPLACE-RAINBOW-IMAGE.jpg);
+  background-position: 50% 31px;
+  background-repeat: no-repeat;
+  height: 1164.8px;
+  margin-top: -582.4px;
+}
+
+.useful-links-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+}
+.link-tab {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #eee;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0 30px;
+}
+
+.description-ul {
+  margin-left: 5%;
+}
+.kayak-overlay-section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 25px;
+  top: 4em;
+  z-index: 10;
+  background-color: #00000087;
+  padding: 2% 11%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-location-kayak {
+  border-radius: 8px;
+  box-shadow: cadetblue;
+  box-shadow: 5px 10px #888888;
+}
+
+.place-holder-video {
+  max-width: 100vw;
+  margin-left: -14.3%;
+  height: 600px;
+  object-fit: fill;
+  margin-bottom: 0px;
+}
+.kayaking-section .Quote-Section {
+  margin-top: -7px;
+}
+
+.testimonials-section {
+  position: relative;
+  display: flex;
+}
+.testimonials-overlay-section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 25px;
+  top: 4em;
+  z-index: 10;
+  /* background-color: #00000087; */
+  padding: 2% 11%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.play-button {
+  background-color: #00000087;
+  width: 200px;
+  margin: 5%;
+  border-radius: 50px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .place-holder-video {
+    margin-left: 0%;
+  }
+  .kayaking-image {
+    height: 100vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*  */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*  */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*  */
+}

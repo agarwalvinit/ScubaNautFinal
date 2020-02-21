@@ -14,11 +14,10 @@ img {
   margin: 0;
 }
 
-body {
+// Over ride css
+.comingsooon__homepage {
   background-color: rgb(1, 19, 33);
 }
-
-// Over ride css
 .scubanaut__container {
   max-width: 1200px;
   margin: auto !important;
@@ -136,6 +135,10 @@ body {
     margin-bottom: 40px;
   }
 
+  .m-auto {
+    margin: 0 auto;
+  }
+
   .rotate {
     animation: rotate 0.5s linear;
   }
@@ -152,11 +155,28 @@ body {
     color: $white;
   }
 
+  .txt-black {
+    color: $black;
+  }
+
+  .bg-deepAcqua {
+    background-color: rgb(1, 19, 33);
+  }
+
   .bg-white {
     background-color: $white;
   }
 
+  .bg-primary {
+    background-color: $primary;
+  }
+
   // font
+  .f-24 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   .f-20 {
     font-size: 20px;
     line-height: 30px;
@@ -180,6 +200,22 @@ body {
   .f-12 {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .box-shadow {
+    box-shadow: 2px 2px 8px -1px #818484;
+  }
+
+  .before-and-after {
+    &:before,
+    &:after {
+      content: "";
+      border-top: 2px solid $primary;
+      display: inline-block;
+      width: 100px;
+      transform: translateY(-5px);
+      margin: 0 10px;
+    }
   }
 
   @keyframes rotate {

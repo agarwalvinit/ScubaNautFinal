@@ -8,11 +8,17 @@ import Youtube from "../../../img/youtube.svg"
 import "./footer.scss"
 
 const Footer = ({ siteTitle }) => (
-  <footer>
+  <footer className="bg-deepAcqua">
     <div className="pure-g p-y-8 p-b-0">
       <div className="pure-u-1-3 flex-column-container p-l-5 txt-blue-1">
         <h3 className="f-14 txt-primary">APPROVED BY</h3>
         <div className="footer-link__box p-y-8">
+          <img
+            alt=""
+            height="100"
+            width="150"
+            src="https://www.paradiseandaman.com/assets/img/tourism-logo.png"
+          />
           <div className="f-12">Tourism Department, A&N Islands</div>
         </div>
       </div>

@@ -27,7 +27,7 @@ const ComingSoonPage = () => (
 const ComingSoon = () => (
   <section className="homepage__container">
     <Sale />
-    <Nav />
+    <Nav className="txt-primary" />
     <div className="pure-g p-y-8">
       <div className="pure-u-1-2 flex-column-container txt-white align-center justify-center txt-white">
         <div className="scuba-dive__box">

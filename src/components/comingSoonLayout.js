@@ -5,8 +5,8 @@ import "../styles/comingSoon/index.scss"
 
 const ComingSoonLayout = ({ children }) => {
   return (
-    <div className="scubanaut__container">
-      <section>{children}</section>
+    <div className="comingsooon__homepage">
+      <section className="scubanaut__container">{children}</section>
     </div>
   )
 }

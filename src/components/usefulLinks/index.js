@@ -25,7 +25,7 @@ const Links = [
 const UsefulLinks = () => {
   return (
     <section className="txt-primary p-a-3 txt-center useful-container">
-      <div className="useful-header before-and-after">Useful Links</div>
+      <div className="f-bold before-and-after">Useful Links</div>
       <div className="flex space-between p-y-8">
         {Links.map(link => (
           <Link

@@ -1,0 +1,16 @@
+@import "colors";
+
+.outer-box__container {
+  position: relative;
+  background-color: rgba($primary, 0.2);
+  height: 100px;
+  width: 180px;
+  .border-box__container {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid $primary;
+  }
+}

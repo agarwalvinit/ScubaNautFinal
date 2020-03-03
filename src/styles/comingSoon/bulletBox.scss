@@ -1,0 +1,18 @@
+@import "colors";
+
+.course--bullet {
+  list-style-type: none;
+  position: relative;
+  li {
+    &:before {
+      content: "\2022";
+      position: absolute;
+      color: $primary;
+      font-weight: bold;
+      display: inline-block;
+      width: 5px;
+      font-size: 24px;
+      margin-left: -12px;
+    }
+  }
+}

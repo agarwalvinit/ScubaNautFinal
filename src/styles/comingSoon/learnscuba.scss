@@ -1,2 +1,23 @@
-.learnscuba_conatiner {
+@import "colors";
+
+.learnscuba__container {
+  .learn-scuba--icon {
+    &:before,
+    &:after {
+      transform: translateY(-25px);
+    }
+  }
+  .price--indicator {
+    color: rgba($black, 0.6);
+  }
+  .mid__box--width {
+    width: auto;
+    margin: auto;
+  }
+  .w-300 {
+    width: 300px;
+  }
+  .p-l-120 {
+    padding-left: 120px;
+  }
 }

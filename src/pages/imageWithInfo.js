@@ -1,12 +1,12 @@
 import React from "react"
 import "../styles/comingSoon/imageWithInfo.scss"
 
-const Image = props => {
+const ImageWithInfo = props => {
   return (
-    <div className="Img_container f-24">
+    <div className="img_container txt-center f-24">
       <img src={props.image} width="100%" height="100%" />
       {props.label1 && (
-        <div className="centered flex-column-container justify-center">
+        <div className="centered f-bold flex-column-container justify-center">
           <div>{props.label1}</div>
           <div>{props.label2}</div>
         </div>
@@ -15,4 +15,4 @@ const Image = props => {
   )
 }
 
-export default Image
+export default ImageWithInfo

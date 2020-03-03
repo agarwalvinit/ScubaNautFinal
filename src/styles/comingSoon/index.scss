@@ -42,6 +42,10 @@ img {
     justify-content: space-between;
   }
 
+  .space-around {
+    justify-content: space-around;
+  }
+
   .txt-center {
     text-align: center;
   }
@@ -96,6 +100,14 @@ img {
     padding-left: 24px;
   }
 
+  .p-t-3 {
+    padding-top: 24px;
+  }
+
+  .p-l-1-1 {
+    padding-left: 12px;
+  }
+
   .p-l-5 {
     padding-left: 40px;
   }
@@ -106,6 +118,10 @@ img {
 
   .p-b-0 {
     padding-bottom: 0;
+  }
+
+  .p-b-8 {
+    padding-bottom: 64px;
   }
 
   // margin
@@ -123,6 +139,14 @@ img {
 
   .m-r-1 {
     margin-right: 8px;
+  }
+
+  .m-r-3 {
+    margin-right: 24px;
+  }
+
+  .m-r-10 {
+    margin-right: 80px;
   }
 
   .m-y-2 {
@@ -157,6 +181,14 @@ img {
 
   .txt-black {
     color: $black;
+  }
+
+  .txt-black-4 {
+    color: rgba($black, 0.4);
+  }
+
+  .txt-black-6 {
+    color: rgba($black, 0.6);
   }
 
   .bg-deepAcqua {
@@ -200,6 +232,10 @@ img {
   .f-12 {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .f-bold {
+    font-weight: bold;
   }
 
   .box-shadow {

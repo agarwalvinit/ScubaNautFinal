@@ -9,6 +9,8 @@ import Footer from "../components/comingSoon/footer"
 import ComingSoonSeo from "../components/comingSoonSeo"
 import UsefulLinks from "../components/usefulLinks"
 import MidTextInfo from "../components/midTextInfo"
+import BorderedBox from "../components/borderedBox"
+import BulletBox from "../components/bulletBox"
 
 import ImageWithInfo from "./imageWithInfo"
 
@@ -21,6 +23,20 @@ import UnderwaterExplore from "../img/underwater_explore.jpg"
 import AndrosDiving from "../img/andros_diving.jpg"
 import AcquaticAnimal from "../img/aquatic_animal.jpg"
 
+// Constants
+import LEARN_SCUBA_DATA from "../Data/learnscuba"
+
+import "../styles/comingSoon/learnscuba.scss"
+
+const {
+  imgInfo,
+  courseIncludes,
+  cost,
+  tax,
+  info,
+  preRequisite,
+} = LEARN_SCUBA_DATA
+
 const LearnScubaPage = () => (
   <ComingSoonLayout>
     <ComingSoonSeo title="Coming Soon Homepage" />
@@ -29,39 +45,44 @@ const LearnScubaPage = () => (
 )
 
 const LearnScuba = () => (
-  <section className="learnscuba_container bg-white">
+  <section className="learnscuba__container bg-white">
     <Sale />
     <Nav className="txt-black" />
     <ImageWithInfo
       image={AndrosDiving}
-      label1="What better  way to  learn how to dive
-      than in the crystal clear, warm waters of Havelock ?"
-      label2="1 Day Experience"
+      label1={imgInfo.label1}
+      label2={imgInfo.label2}
     />
-    <MidTextInfo
-      label1="No previous dive experience is required and upon completion of the course students will be certified to dive to a depth of 18m"
-      label2="The certification is valid for the rest of your life, meaning that you can dive with any dive shop"
-    />
-    <div className="before-and-after">
-      <img src={learnScubaIcon} height="80" width="90" alt="learn scuba" />
+    <MidTextInfo label1="What better way to learn how to dive than in the crystal clear, warm waters of Havelock?" />
+    <div className="before-and-after learn-scuba--icon txt-center p-y-3">
+      <img src={learnScubaIcon} height="60" width="80" alt="learn scuba" />
     </div>
-    <div className="divider--icon"></div>
-    <section className="p-y-8">
-      <QuestionAnswer
-        headerText="WHY SCUBA DIVE?"
-        content="Did you know that 70% of the planet is covered with water and over 21,000 species of fish live in it? Scuba Diving gives you that freedom to explore those unexpected underwater territories and the best part is you don’t have to physically exert yourself in the process. A lot of Scuba Divers agree with us that the very act of staying under the eater tend to be meditative and relieves stress from day to day life. Do sign up for our Open Water Diver program to know how this is going to change your life."
+    <div className="flex justify-center align-center p-x-3 p-y-8 mid__box--width">
+      <img
+        src={UnderwaterExplore}
+        className="box-shadow m-r-10"
+        width="300"
+        height="150"
+        alt="learn scuba"
       />
-    </section>
-    <section className="p-y-3">
-      <QuestionAnswer
-        headerText="WHY HAVELOCK?"
-        content="Havelock Island is considered the birthplace of Scuba Diving in Andaman Islands. So the real question here is Why not Havelock?"
-      />
-    </section>
-
-    <section className="p-y-8">
-      <QuestionAnswer headerText="WHY CHOOSE SCUBANAUT?" />
-    </section>
+      <BorderedBox label1="Learn Scuba" label2="4 days" />
+    </div>
+    <div className="p-b-8">
+      <div className="flex justify-center txt-black-4 p-x-3 f-14 mid__box--width">
+        <div className="w-300 p-a-2 m-r-3">
+          <div>{info.para1}</div>
+          <div>{info.para2}</div>
+        </div>
+        <BulletBox className="p-a-2" bulletData={courseIncludes} />
+      </div>
+      <div className="mid__box--width p-l-120">
+        <BulletBox className="p-t-3 f-14" bulletData={preRequisite} />
+      </div>
+    </div>
+    <div className="price--indicator f-18 txt-center p-y-3">
+      <div className="f-bold">{cost}</div>
+      <div className="f-16 txt-black-4">({tax})</div>
+    </div>
     <UsefulLinks />
     <ImageWithInfo image={AcquaticAnimal} />
     <Footer />

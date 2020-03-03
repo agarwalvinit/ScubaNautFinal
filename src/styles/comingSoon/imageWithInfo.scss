@@ -1,10 +1,9 @@
 @import "colors";
 
-.Img_container {
+.img_container {
   position: relative;
-  text-align: center;
   color: $blue-1;
-  height: 250px;
+  height: 300px;
   width: 100%;
 }
 
@@ -16,5 +15,4 @@
   background-color: rgba($black, 0.5);
   height: 100%;
   width: 100%;
-  font-weight: bold;
 }

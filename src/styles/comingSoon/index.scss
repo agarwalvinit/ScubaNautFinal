@@ -242,6 +242,10 @@ img {
     box-shadow: 2px 2px 8px -1px #818484;
   }
 
+  .ovr-hidden {
+    overflow: hidden;
+  }
+
   .before-and-after {
     &:before,
     &:after {

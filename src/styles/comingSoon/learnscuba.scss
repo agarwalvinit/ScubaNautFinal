@@ -11,13 +11,16 @@
     color: rgba($black, 0.6);
   }
   .mid__box--width {
-    width: auto;
+    width: 70%;
     margin: auto;
   }
-  .w-300 {
-    width: 300px;
+  .w-320 {
+    width: 320px;
   }
   .p-l-120 {
     padding-left: 120px;
+  }
+  .midInfo__overide {
+    width: 65%;
   }
 }

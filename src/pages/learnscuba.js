@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import ComingSoonLayout from "../components/comingSoonLayout"
 import Sale from "../components/comingSoon/sale"
 import Nav from "../components/comingSoon/nav"
-import QuestionAnswer from "../components/comingSoon/questionAnswer"
 import Footer from "../components/comingSoon/footer"
 import ComingSoonSeo from "../components/comingSoonSeo"
 import UsefulLinks from "../components/usefulLinks"
@@ -15,10 +13,6 @@ import BulletBox from "../components/bulletBox"
 import ImageWithInfo from "./imageWithInfo"
 
 import learnScubaIcon from "../img/learnscuba.svg"
-import GroupIcon from "../img/group.svg"
-import teamIcon from "../img/team.svg"
-import locationBlueIcon from "../img/location_blue.svg"
-import ratingIcon from "../img/rating.svg"
 import UnderwaterExplore from "../img/underwater_explore.jpg"
 import AndrosDiving from "../img/andros_diving.jpg"
 import AcquaticAnimal from "../img/aquatic_animal.jpg"
@@ -60,8 +54,7 @@ const LearnScuba = () => (
     <div className="flex justify-center align-center p-x-3 p-y-8 mid__box--width">
       <img
         src={UnderwaterExplore}
-        className="box-shadow m-r-10"
-        width="300"
+        className="box-shadow m-r-10 w-320"
         height="150"
         alt="learn scuba"
       />
@@ -69,7 +62,7 @@ const LearnScuba = () => (
     </div>
     <div className="p-b-8">
       <div className="flex justify-center txt-black-4 p-x-3 f-14 mid__box--width">
-        <div className="w-300 p-a-2 m-r-3">
+        <div className="w-320 p-a-2 m-r-3">
           <div>{info.para1}</div>
           <div>{info.para2}</div>
         </div>

@@ -1,42 +1,78 @@
+import { Link } from "gatsby"
 import React from "react"
 
-import Logo from "../../../img/logo.png"
+import logo from "../../../img/logo.png"
 
 import "./nav.scss"
 
-const Nav = props => (
-  <nav className="nav flex align-center p-y-3 p-x-3">
-    <img src={Logo} width="100" height="100" alt="logo" className="logo" />
-    <div className="pure-menu pure-menu-horizontal">
-      <ul className="pure-menu-list">
-        <li className="pure-menu-item pure-menu-allow-hover">
-          <a className={props.className} id="menuLink1" href="#">
-            SCUBA DIVING
-          </a>
-        </li>
-        <li className="pure-menu-item">
-          <a className={props.className} href="#">
-            KAYAKING
-          </a>
-        </li>
-        <li className="pure-menu-item">
-          <a className={props.className} href="#">
-            STAY WITH US
-          </a>
-        </li>
-        <li className="pure-menu-item">
-          <a className={props.className} href="#">
-            TRAVEL ASSIST
-          </a>
-        </li>
-        <li className="pure-menu-item">
-          <a className={props.className} href="#">
-            CONTACT US
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-)
+class Header extends React.Component {
+  render() {
+    return (
+      <header className="nav-header">
+        <div className="main-header">
+          <Link className="tab p-a-2" to="/">
+            <img className="nav-logo" src={logo} alt="Logo" />
+          </Link>
+          <div className="tabs-holder">
+            <ul className="tab">
+              <li>
+                <div>Scuba Diving </div>
+                <ul>
+                  <li>
+                    <div className="in-tab">Beginners</div>
+                    <ul>
+                      <li>
+                        <Link className="tab-option" to="/tryscuba">
+                          Try Scuba
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="tab-option" to="/learnscuba">
+                          Learn Scuba
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div className="in-tab">Certified Divers</div>
+                    <ul>
+                      <li>
+                        <Link className="tab-option" to="/advanced-scuba">
+                          Advanced Scuba Diving
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="tab-option" to="/speciality-courses">
+                          Speciality Courses
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="tab-option" to="/fun-dives">
+                          Fun Dives
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <Link className="tab" to="/kayaking/">
+              Kayaking
+            </Link>
+            <Link className="tab" to="/stay/">
+              Stay with us
+            </Link>
+            <Link className="tab" to="/travel-assistance/">
+              Travel Assist
+            </Link>
+            <Link className="tab" to="/contact/">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </header>
+    )
+  }
+}
 
-export default Nav
+export default Header

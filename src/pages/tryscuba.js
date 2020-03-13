@@ -78,6 +78,19 @@ const TryScuba = () => (
           <BulletBox className="m-t-3" bulletData={courseIncludes} />
         </div>
       </div>
+      <div className="price--indicator f-18 txt-center">
+        <div className="f-bold flex align-center">
+          <div className="m-r-7">
+            <div className="f-14">1 DIVE</div>
+            <div>Rs. 3500/-</div>
+          </div>
+          <div className="m-r-5">
+            <div className="f-14">2 DIVE</div>
+            <div>Rs. 5500/-</div>
+          </div>
+        </div>
+        <div className="f-16 txt-black-4">({tax})</div>
+      </div>
     </div>
     <ImageWithInfo image={AcquaticAnimal} />
     <div className="flex justify-center align-center p-x-3 p-y-3 mid__box--width">
@@ -87,7 +100,7 @@ const TryScuba = () => (
         height="150"
         alt="learn scuba"
       />
-      <BorderedBox label1="Try Dive" label2="1 hr" />
+      <BorderedBox label1="Discover Scuba Diving" label2="2.5 to 3 hrs" />
     </div>
     <div>
       <div className="flex justify-center txt-black-4 p-x-3 f-14 mid__box--width">

@@ -1,24 +1,128 @@
 @import "../../../styles/comingSoon/colors";
 
-.nav {
-  justify-content: space-between;
+// .nav {
+//   justify-content: space-between;
+//   ul {
+//     list-style: none;
+//     padding: 0;
+
+//     li {
+//       display: inline-block;
+//       margin-right: 20px;
+
+//       a {
+//         text-decoration: none;
+//         &:hover {
+//           color: $primary;
+//         }
+//       }
+//     }
+//   }
+//   .pure-menu-horizontal {
+//     width: auto;
+//   }
+// }
+
+.nav-header {
+  .main-header {
+    color: $white;
+    max-width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .tabs-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tab {
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    font-weight: 200;
+    margin-left: 35px;
+  }
+  .tab-option {
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+  }
+  .nav-logo {
+    width: 100px;
+    margin-bottom: 0px;
+  }
+
+  /*  */
   ul {
     list-style: none;
     padding: 0;
-
-    li {
-      display: inline-block;
-      margin-right: 20px;
-
-      a {
-        text-decoration: none;
-        &:hover {
-          color: $primary;
-        }
-      }
-    }
+    margin: 0;
   }
-  .pure-menu-horizontal {
-    width: auto;
+  ul li {
+    display: block;
+    position: relative;
+    float: left;
+  }
+  li ul {
+    display: none;
+  }
+  ul li div {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #777;
+    background: $white;
+  }
+  .in-tab {
+    padding: 1em 0em;
+    width: 200px;
+  }
+  ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #777;
+    background: white;
+    width: 200px;
+  }
+  ul li .in-tab:hover {
+    background: #eee;
+  }
+  ul li a:hover {
+    background: #eee;
+  }
+  li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+  li:hover li {
+    float: none;
+  }
+
+  .tab li ul li {
+    border-top: 0;
+  }
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  ul:before,
+  ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  ul:after {
+    clear: both;
+  }
+  ul {
+    margin-bottom: 0 !important;
   }
 }

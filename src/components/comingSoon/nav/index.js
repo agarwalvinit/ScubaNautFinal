@@ -14,10 +14,10 @@ class Header extends React.Component {
             <img className="nav-logo" src={logo} alt="Logo" />
           </Link>
           <div className="tabs-holder">
-            <ul className="tab">
+            <ul className="tab cp">
               <li>
                 <div>Scuba Diving </div>
-                <ul>
+                <ul className="second__nav">
                   <li>
                     <div className="in-tab">Beginners</div>
                     <ul>

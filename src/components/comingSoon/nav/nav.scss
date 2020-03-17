@@ -40,18 +40,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 111;
   }
 
   .tab {
     text-align: center;
-    color: $white;
     text-decoration: none;
     font-weight: 200;
     margin-left: 35px;
   }
   .tab-option {
     text-align: center;
-    color: $white;
     text-decoration: none;
   }
   .nav-logo {
@@ -78,8 +77,17 @@
     text-decoration: none;
     white-space: nowrap;
     color: #777;
-    background: $white;
+    background: transparent;
   }
+  .second__nav {
+    box-shadow: -1px 2px 5px -1px #818484;
+    li {
+      div {
+        background: $white;
+      }
+    }
+  }
+
   .in-tab {
     padding: 1em 0em;
     width: 200px;
